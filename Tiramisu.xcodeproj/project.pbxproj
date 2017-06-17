@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CBB28351EF451D8001ADA4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB28341EF451D8001ADA4C /* AppDelegate.swift */; };
+		4CBB283A1EF451D8001ADA4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBB28381EF451D8001ADA4C /* Main.storyboard */; };
+		4CBB283C1EF451D8001ADA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBB283B1EF451D8001ADA4C /* Assets.xcassets */; };
+		4CBB283F1EF451D8001ADA4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBB283D1EF451D8001ADA4C /* LaunchScreen.storyboard */; };
+		4CBB28471EF457A2001ADA4C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4CBB28461EF457A2001ADA4C /* GoogleService-Info.plist */; };
+		4CBB284C1EF4BE28001ADA4C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB284B1EF4BE28001ADA4C /* User.swift */; };
+		4CBB284E1EF4BFB3001ADA4C /* Preference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB284D1EF4BFB3001ADA4C /* Preference.swift */; };
+		4CBB28501EF4C038001ADA4C /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB284F1EF4C038001ADA4C /* Listing.swift */; };
+		4CBB28521EF4C509001ADA4C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB28511EF4C509001ADA4C /* LoginViewController.swift */; };
+		4CBB28551EF4C7F1001ADA4C /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBB28541EF4C7F1001ADA4C /* HomeStoryboard.storyboard */; };
+		4CBB28571EF4C81F001ADA4C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB28561EF4C81F001ADA4C /* HomeViewController.swift */; };
+		4CBB285B1EF4CA24001ADA4C /* ListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBB285A1EF4CA24001ADA4C /* ListingCell.swift */; };
+		82CED8255EEE00582789E4E4 /* Pods_Tiramisu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A7BD26EB483B5D66C94323D /* Pods_Tiramisu.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A7BD26EB483B5D66C94323D /* Pods_Tiramisu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tiramisu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CBB28311EF451D8001ADA4C /* Tiramisu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tiramisu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CBB28341EF451D8001ADA4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4CBB28391EF451D8001ADA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4CBB283B1EF451D8001ADA4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CBB283E1EF451D8001ADA4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4CBB28401EF451D8001ADA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CBB28461EF457A2001ADA4C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4CBB284B1EF4BE28001ADA4C /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4CBB284D1EF4BFB3001ADA4C /* Preference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Preference.swift; sourceTree = "<group>"; };
+		4CBB284F1EF4C038001ADA4C /* Listing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
+		4CBB28511EF4C509001ADA4C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4CBB28541EF4C7F1001ADA4C /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
+		4CBB28561EF4C81F001ADA4C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4CBB285A1EF4CA24001ADA4C /* ListingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListingCell.swift; sourceTree = "<group>"; };
+		CF0DF39864E7B128F2320589 /* Pods-Tiramisu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiramisu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tiramisu/Pods-Tiramisu.release.xcconfig"; sourceTree = "<group>"; };
+		F43FFEE108C23363AA953668 /* Pods-Tiramisu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tiramisu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tiramisu/Pods-Tiramisu.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CBB282E1EF451D8001ADA4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82CED8255EEE00582789E4E4 /* Pods_Tiramisu.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CBB28281EF451D8001ADA4C = {
+			isa = PBXGroup;
+			children = (
+				4CBB28331EF451D8001ADA4C /* Tiramisu */,
+				4CBB28321EF451D8001ADA4C /* Products */,
+				D44E3DEF7AFB30658D3BCEA9 /* Pods */,
+				E5DE5A49398375E616FA2352 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4CBB28321EF451D8001ADA4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CBB28311EF451D8001ADA4C /* Tiramisu.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CBB28331EF451D8001ADA4C /* Tiramisu */ = {
+			isa = PBXGroup;
+			children = (
+				4CBB28581EF4C82F001ADA4C /* Storyboards */,
+				4CBB28531EF4C530001ADA4C /* ViewControllers */,
+				4CBB28481EF4BDFD001ADA4C /* Models */,
+				4CBB28341EF451D8001ADA4C /* AppDelegate.swift */,
+				4CBB283B1EF451D8001ADA4C /* Assets.xcassets */,
+				4CBB28401EF451D8001ADA4C /* Info.plist */,
+				4CBB28461EF457A2001ADA4C /* GoogleService-Info.plist */,
+			);
+			path = Tiramisu;
+			sourceTree = "<group>";
+		};
+		4CBB28481EF4BDFD001ADA4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CBB28591EF4C9FC001ADA4C /* UserInterfaces */,
+				4CBB284B1EF4BE28001ADA4C /* User.swift */,
+				4CBB284D1EF4BFB3001ADA4C /* Preference.swift */,
+				4CBB284F1EF4C038001ADA4C /* Listing.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4CBB28531EF4C530001ADA4C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CBB28511EF4C509001ADA4C /* LoginViewController.swift */,
+				4CBB28561EF4C81F001ADA4C /* HomeViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4CBB28581EF4C82F001ADA4C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4CBB28541EF4C7F1001ADA4C /* HomeStoryboard.storyboard */,
+				4CBB28381EF451D8001ADA4C /* Main.storyboard */,
+				4CBB283D1EF451D8001ADA4C /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		4CBB28591EF4C9FC001ADA4C /* UserInterfaces */ = {
+			isa = PBXGroup;
+			children = (
+				4CBB285A1EF4CA24001ADA4C /* ListingCell.swift */,
+			);
+			name = UserInterfaces;
+			sourceTree = "<group>";
+		};
+		D44E3DEF7AFB30658D3BCEA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F43FFEE108C23363AA953668 /* Pods-Tiramisu.debug.xcconfig */,
+				CF0DF39864E7B128F2320589 /* Pods-Tiramisu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5DE5A49398375E616FA2352 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A7BD26EB483B5D66C94323D /* Pods_Tiramisu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CBB28301EF451D8001ADA4C /* Tiramisu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CBB28431EF451D8001ADA4C /* Build configuration list for PBXNativeTarget "Tiramisu" */;
+			buildPhases = (
+				E69E1552CEC04570D80EE151 /* [CP] Check Pods Manifest.lock */,
+				4CBB282D1EF451D8001ADA4C /* Sources */,
+				4CBB282E1EF451D8001ADA4C /* Frameworks */,
+				4CBB282F1EF451D8001ADA4C /* Resources */,
+				496B8D4121EAF643D35A9A84 /* [CP] Embed Pods Frameworks */,
+				92CF567037B7A5BC15813A0A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tiramisu;
+			productName = Tiramisu;
+			productReference = 4CBB28311EF451D8001ADA4C /* Tiramisu.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CBB28291EF451D8001ADA4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Derrick Wong";
+				TargetAttributes = {
+					4CBB28301EF451D8001ADA4C = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4CBB282C1EF451D8001ADA4C /* Build configuration list for PBXProject "Tiramisu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CBB28281EF451D8001ADA4C;
+			productRefGroup = 4CBB28321EF451D8001ADA4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CBB28301EF451D8001ADA4C /* Tiramisu */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CBB282F1EF451D8001ADA4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBB283F1EF451D8001ADA4C /* LaunchScreen.storyboard in Resources */,
+				4CBB28471EF457A2001ADA4C /* GoogleService-Info.plist in Resources */,
+				4CBB283C1EF451D8001ADA4C /* Assets.xcassets in Resources */,
+				4CBB283A1EF451D8001ADA4C /* Main.storyboard in Resources */,
+				4CBB28551EF4C7F1001ADA4C /* HomeStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		496B8D4121EAF643D35A9A84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tiramisu/Pods-Tiramisu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92CF567037B7A5BC15813A0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tiramisu/Pods-Tiramisu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E69E1552CEC04570D80EE151 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CBB282D1EF451D8001ADA4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CBB28351EF451D8001ADA4C /* AppDelegate.swift in Sources */,
+				4CBB28501EF4C038001ADA4C /* Listing.swift in Sources */,
+				4CBB285B1EF4CA24001ADA4C /* ListingCell.swift in Sources */,
+				4CBB284E1EF4BFB3001ADA4C /* Preference.swift in Sources */,
+				4CBB28521EF4C509001ADA4C /* LoginViewController.swift in Sources */,
+				4CBB284C1EF4BE28001ADA4C /* User.swift in Sources */,
+				4CBB28571EF4C81F001ADA4C /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4CBB28381EF451D8001ADA4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CBB28391EF451D8001ADA4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4CBB283D1EF451D8001ADA4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4CBB283E1EF451D8001ADA4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4CBB28411EF451D8001ADA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4CBB28421EF451D8001ADA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CBB28441EF451D8001ADA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F43FFEE108C23363AA953668 /* Pods-Tiramisu.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tiramisu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DerrickWong.Tiramisu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4CBB28451EF451D8001ADA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF0DF39864E7B128F2320589 /* Pods-Tiramisu.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tiramisu/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.DerrickWong.Tiramisu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CBB282C1EF451D8001ADA4C /* Build configuration list for PBXProject "Tiramisu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CBB28411EF451D8001ADA4C /* Debug */,
+				4CBB28421EF451D8001ADA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CBB28431EF451D8001ADA4C /* Build configuration list for PBXNativeTarget "Tiramisu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CBB28441EF451D8001ADA4C /* Debug */,
+				4CBB28451EF451D8001ADA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4CBB28291EF451D8001ADA4C /* Project object */;
+}
