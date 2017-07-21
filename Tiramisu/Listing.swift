@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
 class Listing: NSObject {
     
@@ -16,7 +17,7 @@ class Listing: NSObject {
     var listingId: String?
     
     //description of the food
-    var description: String?
+    var listingDescription: String?
     
     //where the food is available
     var location: String?
@@ -42,4 +43,38 @@ class Listing: NSObject {
     //might want to pick a faster data structure
     var patronsList: [String]?
     
+    
+    init(snapshot: FIRDataSnapshot){
+        if snapshot.value as? NSDictionary != nil{
+            print("initializer is called")
+            let dict = snapshot.value as! NSDictionary
+            //initializer being called
+            self.listingDescription = dict["Description"] as? String
+            self.location = dict["Location"] as? String
+            self.name = dict["Name"] as? String
+            self.photoUrl = dict["Photo_url"] as? String
+            self.price = dict["Price"] as? String
+            self.rating = dict["Rating"] as? Int
+            self.servings = dict["Servings"] as? Int
+            self.status = dict["Status"] as? Int
+        
+
+        
+        } else{
+            print("initialization failed!")
+            
+        }
+        
+        
+        
+            
+        
+            
+        
+       
+        
+        
+        
+        
+    }
 }

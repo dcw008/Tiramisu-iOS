@@ -6,7 +6,10 @@
 //  Copyright © 2017 Derrick Wong. All rights reserved.
 //
 
+
 import UIKit
+import AFNetworking
+
 
 class ListingCell: UITableViewCell {
 
@@ -20,11 +23,17 @@ class ListingCell: UITableViewCell {
     
     var listing: Listing!{
         didSet{
-            let imageUrl = listing.photoUrl!
-            self.listingImage.setImageWith(imageUrl)
+            
+           
+            if let imageUrlString = listing.photoUrl{
+                let url = URL(string: imageUrlString)
+                self.listingImage.setImageWith(url!)
+            
+            }
+        
             self.name.text = listing.name
             self.price.text = listing.price
-            self.location = listing.location
+            self.location.text = listing.location
         }
     }
     

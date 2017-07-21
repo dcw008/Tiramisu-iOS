@@ -7,10 +7,17 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
+import Firebase
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var listings: [Listings]?
+    var listings: [Listing]?
+    var user: FIRUser?
+    var ref: FIRDatabaseReference!
+    
+
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -19,11 +26,29 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
         tableView.rowHeight = UITableViewAutomaticDimension
-        
-        
-        //get the listings from firebase request
-        self.tableView.reloadData()
+        self.tableView.estimatedRowHeight = 400
+
+        //set the reference at the listings endpoint
+        ref = FIRDatabase.database().reference(withPath: "Listings")
+
+        ref.observe(FIRDataEventType.value, with: { (snapshot) in
+            //print(snapshot)
+            var tempArray: [Listing] = []
+            for listing in snapshot.children {
+                //let localListing = listing as! Listing
+                //print("listing \(listing)")
+                let localListing = Listing(snapshot: listing as! FIRDataSnapshot)
+                tempArray.append(localListing)
+            }
+            
+            //print("TEMP ARRAY \(tempArray)")
+            self.listings = tempArray
+            //print("Listings IN THE BLOCK: \(self.listings)")
+            self.tableView.reloadData()
+            
+        })
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,8 +58,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     //returns number of rows to populate the tableView
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if listing != nil{
-            return listings.count!
+        if listings != nil{
+            return listings!.count
         } else{
             return 0
         }
@@ -42,7 +67,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "ListingCell", for: indexPath) as! ListingCell
-        cell.listing = listings[indexPath.row]
+        cell.listing = listings?[indexPath.row]
         return cell
         
     }

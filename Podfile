@@ -7,5 +7,7 @@ target 'Tiramisu' do
   # Pods for Tiramisu
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  pod 'AFNetworking'
 
 end
