@@ -19,7 +19,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        
+        
+        usernameField.becomeFirstResponder()
+
+
 //        //observer to monitor authentication state.
 //        FIRAuth.auth()!.addStateDidChangeListener() { auth, user in
 //            // 2
